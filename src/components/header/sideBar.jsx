@@ -98,7 +98,7 @@ function SideBar() {
         );
       })}
       <div>
-        <h1>Диапозон цен</h1>
+        <h1>Диапазон цен</h1>
         <MyInput
           type="number"
           placeholder="от"
