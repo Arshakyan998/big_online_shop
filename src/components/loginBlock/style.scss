@@ -1,0 +1,75 @@
+.main {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(7, 7, 7, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_block {
+    background: #fff;
+    border-radius: 7px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.registrationBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 55px;
+  >form{
+
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+    
+  }
+
+p{
+  color: red;
+}
+
+ 
+} 
+&_img{
+        width: 400px!important;
+        height:400px !important;
+        border-radius: 50%;
+        border:1px solid red;
+        padding: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >img{
+          border-radius: 50%;
+
+        }
+
+  }
+  input[type=file]{
+    visibility: hidden;
+  }
+}

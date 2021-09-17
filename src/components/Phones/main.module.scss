@@ -1,0 +1,58 @@
+@import "./Mixins";
+
+$mainWith: 90%;
+
+.loader {
+  width: 90px;
+  height: 90px;
+  border-top: 15px solid red;
+  border-bottom: 15px solid red;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  padding: 0;
+  animation: loaderAnimation 0.5s infinite linear;
+}
+
+@keyframes loaderAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  width: $mainWith;
+  margin: 25px auto;
+  @include flex(center, center, row, wrap);
+
+  &_items {
+    @include flex(none, none, row, wrap);
+  }
+  &_product {
+    width:  341px;
+    padding: 9px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 7px;
+    button:hover{
+      background: orange;
+      color: #fff;
+      transition: all 0.2s ease-in;
+}
+    &_add_view {
+      @include flex(center, center, row, none);
+
+      div:not(:first-child) {
+        margin-left: 5px;
+      }
+      margin: auto;
+    }
+    div {
+      margin: 8px auto;
+    }
+  }
+}

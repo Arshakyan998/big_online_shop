@@ -1,0 +1,27 @@
+@import './Mixins';
+$width:80%;
+
+.block{
+        width: $width;
+        margin:25px auto;
+        &_comments{
+                width: inherit;
+                border:none;
+                outline: none;
+                border-bottom: 1px solid #000;
+                margin-top: 55px
+        }
+}
+
+.main{
+        @include flex(none,space-between,row,none);
+        width:inherit;
+        &_params{
+               &:not(:first-child){
+                       padding-top: 10px;
+               }
+                
+
+        }
+        
+}
